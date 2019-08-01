@@ -24,7 +24,7 @@ function getRepositories() {
   req.send();
 }
 
-function getCommits(el) {
+function getCommits() {
   function showCommits() {
   const commits = JSON.parse(this.responseText);
   const commitsList = `<ul>${commits
